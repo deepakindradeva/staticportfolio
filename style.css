@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  background: #111112;
+}
+
+.navbar .width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar .width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #c9c9c9;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #20a4f3;
+}
+
+.navbar .logo a {
+  color: #20a4f3;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* home section */
+
+.home {
+  display: flex;
+  background-color: #000000;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  color: #20a4f3;
+}
+
+.home .max-width {
+  margin: auto auto auto auto;
+}
+
+.home .home-content .text-1 {
+  align-items: center;
+  padding: 1em 0em 1em 0em;
+  font-size: 27px;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: row;
+  background-color: #182b3a;
+  background-image: linear-gradient(315deg, #20a4f3 60%, #182b3a 0%);
+
+  height: 100vh;
+  min-height: 500px;
+  color: #000000;
+}
+
+.about .left {
+  align-content: flex-start;
+}
+
+.about .right {
+  align-content: flex-end;
+}
+
+.about .right .header {
+  margin-top: 5em;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.002em;
+}
+
+.about .left .image {
+  margin: 10em 0 0 5em;
+  width: 33em;
+  border-radius: 30px;
+}
+
+.about .right .textcontent {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  margin-top: 2em;
+  padding: 0 5em 0 5em;
+}
+.about .right .textcontent .list {
+  padding: 1em 0 0 10em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+tr td {
+  padding: 0.4em 2em 0 6em;
+  font-size: 18px;
+}
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: row;
+  background-color: #182b3a;
+  background-image: linear-gradient(315deg, #20a4f3 60%, #182b3a 0%);
+  height: 100vh;
+  min-height: 500px;
+  color: #000000;
+  overflow: hidden;
+}
+
+.contact .left {
+  align-content: flex-start;
+}
+
+.contact .right {
+  align-content: flex-end;
+}
+
+.contact .left .myimage {
+  margin: 12em 0 0 5em;
+  width: 50em;
+  border-radius: 30px;
+}
+
+.contact .right .header {
+  margin-top: 10em;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.002em;
+}
+
+.contact .right .textcontent {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  margin: 2em 0 0 2em;
+}
+
+/* work */
+.work {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  height: 100vh;
+  min-height: 500px;
+  color: #20a4f3;
+}
+
+.work .header {
+  padding: 3em 0 1em 0;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.002em;
+}
+
+.work .content {
+  padding-top: 2 em;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 6em 0 6em;
+  font-size: 25px;
+  letter-spacing: -0.002em;
+}
+.work .content .card {
+  /* background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+  /* background-color: #2d3436; */
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  padding: 1em;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.work .content .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(24, 21, 21, 0.6);
+}
+
+.work .content .card .card-level-01 {
+  padding: 1em;
+}
+
+.work .content .card .card-level-01 .card-level-02 {
+  line-height: 1.1;
+}
+
+ul.ba {
+  font-size: 18px;
+  list-style-type: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #20a4f3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
